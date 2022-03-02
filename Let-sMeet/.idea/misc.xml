@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Travail/S6/Let-sMeet/Let-sMeet/app/src/main/res/drawable/drawable_setting_btn.xml" value="0.15833333333333333" />
+        <entry key="..\:/Travail/S6/Let-sMeet/Let-sMeet/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Travail/S6/Let-sMeet/Let-sMeet/app/src/main/res/layout/drawer.xml" value="0.1" />
+        <entry key="..\:/Travail/S6/Let-sMeet/Let-sMeet/app/src/main/res/layout/fragment_flux.xml" value="0.2726449275362319" />
+        <entry key="..\:/Travail/S6/Let-sMeet/Let-sMeet/app/src/main/res/layout/fragment_second.xml" value="0.2726449275362319" />
+        <entry key="..\:/Travail/S6/Let-sMeet/Let-sMeet/app/src/main/res/layout/fragment_settings.xml" value="0.2" />
+        <entry key="..\:/Travail/S6/Let-sMeet/Let-sMeet/app/src/main/res/menu/drawer.xml" value="0.1" />
+        <entry key="..\:/Travail/S6/Let-sMeet/Let-sMeet/app/src/main/res/menu/drawer_menu.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

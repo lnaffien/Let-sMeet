@@ -1,3 +1,28 @@
 <resources>
     <string name="app_name">Let\'s Meet</string>
+    <string name="title_activity_main">MainActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <!-- For the drawer menu -->
+    <string name="profile">Nom de profil</string>
+    <string name="profile_img">Photo de profil</string>
+    <string name="flux">Flux</string>
+    <string name="my_events">Mes évènements</string>
+    <string name="contacts">Contacts</string>
+    <string name="settings">Paramètres</string>
+    <string name="disconnection">Déconnexion</string>
+
+    <!-- For the settings -->
+    <string name="setting_profile_pic">Changer ma photo de profil</string>
+    <string name="setting_profile_name">Changer mon pseudo</string>
+    <string name="setting_password">Changer mon mot de passe</string>
+    <string name="setting_contact">Nous contacter</string>
+    <string name="setting_delete_account" >Supprimer mon compte</string>
+
+
+
 </resources>
