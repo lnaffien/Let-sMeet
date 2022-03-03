@@ -3,14 +3,22 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Travail/S6/Let-sMeet/Let-sMeet/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.18611111111111112" />
         <entry key="..\:/Travail/S6/Let-sMeet/Let-sMeet/app/src/main/res/drawable/drawable_setting_btn.xml" value="0.15833333333333333" />
+        <entry key="..\:/Travail/S6/Let-sMeet/Let-sMeet/app/src/main/res/drawable/ic_baseline_account_circle_24.xml" value="0.18611111111111112" />
+        <entry key="..\:/Travail/S6/Let-sMeet/Let-sMeet/app/src/main/res/drawable/ic_launcher_background.xml" value="0.18611111111111112" />
+        <entry key="..\:/Travail/S6/Let-sMeet/Let-sMeet/app/src/main/res/drawable/ic_round_menu_24.xml" value="0.19375" />
         <entry key="..\:/Travail/S6/Let-sMeet/Let-sMeet/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Travail/S6/Let-sMeet/Let-sMeet/app/src/main/res/layout/drawer.xml" value="0.1" />
         <entry key="..\:/Travail/S6/Let-sMeet/Let-sMeet/app/src/main/res/layout/fragment_flux.xml" value="0.2726449275362319" />
         <entry key="..\:/Travail/S6/Let-sMeet/Let-sMeet/app/src/main/res/layout/fragment_second.xml" value="0.2726449275362319" />
         <entry key="..\:/Travail/S6/Let-sMeet/Let-sMeet/app/src/main/res/layout/fragment_settings.xml" value="0.2" />
+        <entry key="..\:/Travail/S6/Let-sMeet/Let-sMeet/app/src/main/res/layout/nav_header.xml" value="0.264" />
+        <entry key="..\:/Travail/S6/Let-sMeet/Let-sMeet/app/src/main/res/layout/toolbar.xml" value="0.264" />
         <entry key="..\:/Travail/S6/Let-sMeet/Let-sMeet/app/src/main/res/menu/drawer.xml" value="0.1" />
         <entry key="..\:/Travail/S6/Let-sMeet/Let-sMeet/app/src/main/res/menu/drawer_menu.xml" value="0.1" />
+        <entry key="..\:/Travail/S6/Let-sMeet/Let-sMeet/app/src/main/res/menu/toolbar_menu.xml" value="0.1" />
+        <entry key="..\:/Travail/S6/Let-sMeet/Let-sMeet/app/src/main/res/menu/toolbar_menu_flux.xml" value="0.21145833333333333" />
       </map>
     </option>
   </component>

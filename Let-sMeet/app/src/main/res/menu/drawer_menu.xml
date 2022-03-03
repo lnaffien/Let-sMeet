@@ -1,36 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <group>
-        <item
-            android:id="@+id/drawer_profile_img"
-            android:icon="@drawable/ic_launcher_background"
-            android:title="@string/profile_img"/>
 
-        <item
-            android:id="@+id/drawer_profile"
-            android:title="@string/profile"/>
-    </group>
-
-    <group>
+    <group android:checkableBehavior="single">
         <item
             android:id="@+id/drawer_flux"
-            android:title="@string/flux"/>
+            android:title="@string/flux" />
 
         <item
             android:id="@+id/drawer_my_events"
-            android:title="@string/my_events"/>
+            android:title="@string/my_events" />
 
         <item
             android:id="@+id/drawer_contact"
-            android:title="@string/contacts"/>
+            android:title="@string/contacts" />
     </group>
 
-    <item
-        android:id="@+id/drawer_settings"
-        android:title="@string/settings"/>
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/drawer_settings"
+            android:title="@string/settings" />
 
-    <item
-        android:id="@+id/drawer_disconnection"
-        android:title="@string/disconnection"/>
+        <item
+            android:id="@+id/drawer_disconnection"
+            android:title="@string/disconnection" />
+    </group>
 
 </menu>

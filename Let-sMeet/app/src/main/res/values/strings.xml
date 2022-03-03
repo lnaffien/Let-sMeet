@@ -7,6 +7,10 @@
     <string name="next">Next</string>
     <string name="previous">Previous</string>
 
+    <!-- For the toolbar -->
+    <string name="toolbar_page">Nom de la page</string>
+    <string name="toolbar_search">Rechercher</string>
+
     <!-- For the drawer menu -->
     <string name="profile">Nom de profil</string>
     <string name="profile_img">Photo de profil</string>
