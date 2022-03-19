@@ -27,6 +27,19 @@
     <string name="setting_contact">Nous contacter</string>
     <string name="setting_delete_account" >Supprimer mon compte</string>
 
+    <!-- For the events -->
+    <string name="event_title">Titre</string>
+    <string name="event_img">Image</string>
+    <string name="event_type">Type</string>
+    <string name="event_type_img">Type img</string>
+    <string name="event_description">Description</string>
+    <string name="event_address">Adresse</string>
+    <string name="event_city">City</string>
+    <string name="event_date_start">JJ/MM/AAAA</string>
+    <string name="event_date_end">JJ/MM/AAAA</string>
+    <string name="event_hour_start">HH:MM</string>
+    <string name="event_hour_end">HH:MM</string>
+
 
 
 </resources>

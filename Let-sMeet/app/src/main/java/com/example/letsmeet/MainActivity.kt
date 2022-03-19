@@ -1,16 +1,22 @@
+// Logger.getLogger(MainActivity::class.java.name).warning("" + fram.javaClass)
+
 package com.example.letsmeet
 
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.FrameLayout
 import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
+import androidx.fragment.app.FragmentManager
+import androidx.fragment.app.FragmentTransaction
 import com.google.android.material.navigation.NavigationView
 import java.util.*
+import java.util.logging.Logger
 
 class MainActivity : AppCompatActivity()
 {
@@ -20,6 +26,7 @@ class MainActivity : AppCompatActivity()
     private lateinit var drawer: DrawerLayout
     private lateinit var toggle: ActionBarDrawerToggle
     private lateinit var navView: NavigationView
+    private lateinit var fragmentLayout: FrameLayout
 
     override fun onCreate(savedInstanceState: Bundle?)
     {
@@ -27,6 +34,8 @@ class MainActivity : AppCompatActivity()
         //binding = ActivityMainBinding.inflate(layoutInflater)
         //setContentView(binding.root)
         setContentView(R.layout.activity_main)
+
+        fragmentLayout = findViewById(R.id.fragment_main)
 
         val toolbar: Toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)
@@ -76,11 +85,14 @@ class MainActivity : AppCompatActivity()
     private fun setNavDrawerEvent()
     {
         navView.setNavigationItemSelectedListener { menuItem ->
+            this.onBackPressed()
+            val fram = supportFragmentManager.beginTransaction()
             when (menuItem.itemId)
             {
                 R.id.drawer_flux ->
                 {
-                    Toast.makeText(this, R.string.flux, Toast.LENGTH_SHORT).show()
+                    fram.replace(R.id.fragment_main, FluxFragment())
+                    fram.commit()
                     true
                 }
                 R.id.drawer_my_events ->
