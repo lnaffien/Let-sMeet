@@ -25,7 +25,7 @@
     <string name="setting_profile_name">Changer mon pseudo</string>
     <string name="setting_password">Changer mon mot de passe</string>
     <string name="setting_contact">Nous contacter</string>
-    <string name="setting_delete_account" >Supprimer mon compte</string>
+    <string name="setting_delete_account">Supprimer mon compte</string>
 
     <!-- For the events -->
     <string name="event_title">Titre</string>
@@ -39,7 +39,6 @@
     <string name="event_date_end">JJ/MM/AAAA</string>
     <string name="event_hour_start">HH:MM</string>
     <string name="event_hour_end">HH:MM</string>
-
 
 
 </resources>

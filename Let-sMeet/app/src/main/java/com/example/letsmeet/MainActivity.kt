@@ -3,6 +3,7 @@
 package com.example.letsmeet
 
 import android.os.Bundle
+import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.FrameLayout
@@ -14,9 +15,19 @@ import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
+import androidx.lifecycle.ViewModelProvider
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import com.example.letsmeet.databinding.ActivityMainBinding
+import com.example.letsmeet.onlineAPI.PlacesStrasbourgAPIRepository
+import com.example.letsmeet.onlineAPI.PlacesStrasbourgAPIService
+import com.example.letsmeet.onlineAPI.PlacesStrasbourgAPIViewModel
+import com.example.letsmeet.onlineAPI.PlacesStrasbourgAPIViewModelFactory
 import com.google.android.material.navigation.NavigationView
+import okhttp3.internal.notifyAll
 import java.util.*
 import java.util.logging.Logger
+import kotlin.collections.ArrayList
 
 class MainActivity : AppCompatActivity()
 {
@@ -28,12 +39,46 @@ class MainActivity : AppCompatActivity()
     private lateinit var navView: NavigationView
     private lateinit var fragmentLayout: FrameLayout
 
+    private lateinit var linearLayoutManager: LinearLayoutManager
+    private lateinit var adapter: TempRecyclerPlace
+
     override fun onCreate(savedInstanceState: Bundle?)
     {
         super.onCreate(savedInstanceState)
         //binding = ActivityMainBinding.inflate(layoutInflater)
         //setContentView(binding.root)
         setContentView(R.layout.activity_main)
+
+        // TEMP
+        val arrayTemp : ArrayList<String> = arrayListOf("1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17")
+
+        linearLayoutManager = LinearLayoutManager(this)
+        var recyclerView : RecyclerView = findViewById(R.id.recycler_view_main)
+        recyclerView.layoutManager = linearLayoutManager
+
+        adapter = TempRecyclerPlace(arrayTemp)
+        recyclerView.adapter = adapter
+
+
+//        val binding = ActivityMainBinding.inflate(layoutInflater)
+//        setContentView(binding.root)
+//
+//        val retrofitService = PlacesStrasbourgAPIService.getInstance()
+//        val adapter = PlaceAdapter()
+//        var viewModel = ViewModelProvider(this,
+//            PlacesStrasbourgAPIViewModelFactory(PlacesStrasbourgAPIRepository(retrofitService)))
+//            .get(PlacesStrasbourgAPIViewModel::class.java)
+//
+//        binding.recyclerViewMain.adapter = adapter
+//        viewModel.liveData.observe(this, androidx.lifecycle.Observer {
+//            Log.d("Main Activity", "onCreate : $it")
+//            adapter.setPlacesList(it)
+//        })
+//        viewModel.errorMessage.observe(this, androidx.lifecycle.Observer {
+//
+//        })
+//        viewModel.getAllPlaces()
+        // FIN TEMP
 
         fragmentLayout = findViewById(R.id.fragment_main)
 
@@ -54,7 +99,27 @@ class MainActivity : AppCompatActivity()
 //
         navView = findViewById(R.id.drawer_nav_view)
         setNavDrawerEvent()
+
+
     }
+
+    /*fun receivedNewPjoto(place : Place)
+    {
+        runOnUiThread
+        {
+            placeList.add(newPlace)
+            adapter.notifyAll()
+        }
+
+    }*/
+
+    /*override fun onStart() {
+        super.onStart()
+        if(placeList.size == 0)
+        {
+            requestPlace()
+        }
+    }*/
 
     /**
      * When a slide from left to right happened
