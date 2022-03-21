@@ -2,6 +2,7 @@ package com.example.letsmeet.onlineAPI
 
 import android.util.Log
 import com.example.letsmeet.Place
+import com.example.letsmeet.R
 import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
@@ -21,7 +22,7 @@ interface PlacesStrasbourgAPIService
             if (retrofitService == null)
             {
                 val retrofit = Retrofit.Builder()
-                    .baseUrl("https://data.strasbourg.eu/api/records/1.0/search/?dataset=lieux_culture")
+                    .baseUrl(R.string.api_key_strasbourg.toString())
                     .addConverterFactory(create())
                     .build()
                 retrofitService = retrofit.create(PlacesStrasbourgAPIService::class.java)

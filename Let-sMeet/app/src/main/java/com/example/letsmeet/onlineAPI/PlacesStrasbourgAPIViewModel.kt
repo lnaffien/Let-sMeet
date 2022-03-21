@@ -12,12 +12,10 @@ class PlacesStrasbourgAPIViewModel constructor(private val repository : PlacesSt
     val errorMessage = MutableLiveData<String>()
     val liveData = MutableLiveData<List<Place>>()
     var job : Job ? = null
-
     val exceptionHandler = CoroutineExceptionHandler {
             _,
             throwable -> onError("Execption handled : ${throwable.localizedMessage}")
     }
-
     val loading = MutableLiveData<Boolean>()
 
     fun getAllPlaces()
