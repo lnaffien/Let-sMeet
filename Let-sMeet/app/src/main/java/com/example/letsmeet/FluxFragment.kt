@@ -8,6 +8,8 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.example.letsmeet.databinding.ActivityMainBinding
 import com.example.letsmeet.onlineAPI.PlacesStrasbourgAPIRepository
 import com.example.letsmeet.onlineAPI.PlacesStrasbourgAPIService
@@ -23,7 +25,16 @@ class FluxFragment : Fragment()
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View?
     {
-        val inflation = inflater.inflate(R.layout.fragment_flux, container, false)
+        val view : View = inflater.inflate(R.layout.fragment_flux, container, false)
+
+        val arrayTemp : ArrayList<String> = arrayListOf("1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17")
+        var adapter: TempRecyclerPlace = TempRecyclerPlace(arrayTemp)
+        var recyclerView : RecyclerView = view.findViewById(R.id.recycler_view_main)
+        var linearLayoutManager = LinearLayoutManager(view.context)
+
+        recyclerView.layoutManager = linearLayoutManager
+
+        recyclerView.adapter = adapter
 
         /*binding = ActivityMainBinding.inflate(layoutInflater)
         val strasbourgAPIService = PlacesStrasbourgAPIService.getInstance()
@@ -54,6 +65,6 @@ class FluxFragment : Fragment()
 
         viewModel.getAllPlaces()*/
 
-        return inflation
+        return view
     }
 }

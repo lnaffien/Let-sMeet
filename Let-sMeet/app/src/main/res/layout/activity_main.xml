@@ -27,13 +27,6 @@
             app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
 
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recycler_view_main"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            tools:listitem="@layout/adapter_places"
-            android:scrollbars="vertical"/>
-
         <FrameLayout
             android:id="@+id/fragment_main"
             android:layout_width="match_parent"

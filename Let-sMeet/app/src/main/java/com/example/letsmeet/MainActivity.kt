@@ -40,7 +40,6 @@ class MainActivity : AppCompatActivity()
     private lateinit var fragmentLayout: FrameLayout
 
     private lateinit var linearLayoutManager: LinearLayoutManager
-    private lateinit var adapter: TempRecyclerPlace
 
     override fun onCreate(savedInstanceState: Bundle?)
     {
@@ -50,15 +49,6 @@ class MainActivity : AppCompatActivity()
         setContentView(R.layout.activity_main)
 
         // TEMP
-        val arrayTemp : ArrayList<String> = arrayListOf("1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17")
-
-        linearLayoutManager = LinearLayoutManager(this)
-        var recyclerView : RecyclerView = findViewById(R.id.recycler_view_main)
-        recyclerView.layoutManager = linearLayoutManager
-
-        adapter = TempRecyclerPlace(arrayTemp)
-        recyclerView.adapter = adapter
-
 
 //        val binding = ActivityMainBinding.inflate(layoutInflater)
 //        setContentView(binding.root)
