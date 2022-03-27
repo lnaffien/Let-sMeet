@@ -1,10 +1,10 @@
-package com.example.letsmeet.temp
+package com.example.letsmeet.placeRecyclerView
 
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.letsmeet.*
 
-class APIStrgAdapter : RecyclerView.Adapter<APIStrgViewHolder>()
+class PlaceAdapter : RecyclerView.Adapter<PlaceViewHolder>()
 {
     private var places = mutableListOf<Place>()
 
@@ -26,21 +26,20 @@ class APIStrgAdapter : RecyclerView.Adapter<APIStrgViewHolder>()
         notifyDataSetChanged()
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): APIStrgViewHolder
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PlaceViewHolder
     {
         val binding = parent.inflate(R.layout.adapter_places, false)
-        return APIStrgViewHolder(binding)
+        return PlaceViewHolder(binding)
     }
 
-    override fun onBindViewHolder(holder: APIStrgViewHolder, position: Int)
+    override fun onBindViewHolder(holder: PlaceViewHolder, position: Int)
     {
         val place = places[position]
         holder.bindPlace(places[position])
     }
 
 
-
-        override fun getItemCount() = places.size
+    override fun getItemCount() = places.size
 
 }
 

@@ -41,7 +41,7 @@
     <string name="event_hour_end">HH:MM</string>
 
     <!-- For the APIs -->
-    <string name="api_key_strasbourg">https://data.strasbourg.eu/api/records/1.0/search/?dataset=lieux_culture"</string>
+    <string name="api_key_strasbourg">https://data.strasbourg.eu/api/records/1.0/search/?dataset=lieux_culture</string>
 
 
 </resources>

@@ -1,4 +1,4 @@
-package com.example.letsmeet.temp
+package com.example.letsmeet.placeRecyclerView
 
 import android.content.Intent
 import android.util.Log
@@ -9,7 +9,7 @@ import com.example.letsmeet.Place
 import com.example.letsmeet.PlaceDetailsActivity
 import com.example.letsmeet.R
 
-class APIStrgViewHolder(view: View) : RecyclerView.ViewHolder(view), View.OnClickListener {
+class PlaceViewHolder(view: View) : RecyclerView.ViewHolder(view), View.OnClickListener {
     private var view: View = view
     private var place: String? = null
 

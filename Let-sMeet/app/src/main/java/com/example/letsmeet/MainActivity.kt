@@ -50,6 +50,8 @@ class MainActivity : AppCompatActivity()
 
         // TEMP
 
+
+
 //        val binding = ActivityMainBinding.inflate(layoutInflater)
 //        setContentView(binding.root)
 //
@@ -89,6 +91,11 @@ class MainActivity : AppCompatActivity()
 //
         navView = findViewById(R.id.drawer_nav_view)
         setNavDrawerEvent()
+
+        // Open the Flux as the default page
+        var fram = supportFragmentManager.beginTransaction()
+        fram.replace(R.id.fragment_main, FluxFragment())
+        fram.commit()
 
 
     }
