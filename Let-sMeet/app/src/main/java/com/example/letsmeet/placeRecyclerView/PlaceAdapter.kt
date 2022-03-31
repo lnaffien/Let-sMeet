@@ -1,7 +1,9 @@
 package com.example.letsmeet.placeRecyclerView
 
 import android.view.ViewGroup
+import androidx.core.content.contentValuesOf
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.example.letsmeet.*
 
 class PlaceAdapter : RecyclerView.Adapter<PlaceViewHolder>()

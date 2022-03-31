@@ -3,8 +3,10 @@ package com.example.letsmeet.placeRecyclerView
 import android.content.Intent
 import android.util.Log
 import android.view.View
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.example.letsmeet.Place
 import com.example.letsmeet.PlaceDetailsActivity
 import com.example.letsmeet.R
@@ -36,5 +38,16 @@ class PlaceViewHolder(view: View) : RecyclerView.ViewHolder(view), View.OnClickL
 //            Picasso.with(view.context).load(photo.url).into(view.itemImage)
         var name: TextView = view.findViewById(R.id.event_title)
         name.text = place.name
+
+        var img : ImageView = view.findViewById(R.id.event_img)
+        var imagesURL : ArrayList<String>? = place.getImages()
+        if ( imagesURL != null && imagesURL.isNotEmpty() )
+        {
+            //Log.e("Place debug", imagesURL.toString())
+            Glide.with(view)
+                .load(imagesURL[0])
+                .into(img)
+        }
+
     }
 }
