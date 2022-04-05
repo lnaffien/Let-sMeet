@@ -1,6 +1,8 @@
 package com.example.letsmeet
 
 import android.util.Log
+import java.io.Serializable
+import java.util.regex.Matcher
 import java.util.regex.Pattern
 
 data class Place (val accessForWheelchair : Int?,
@@ -16,13 +18,12 @@ data class Place (val accessForWheelchair : Int?,
                   val friendlyurl : String?,
                   val accessfordeficient : Int,
                   val serviceandactivities : String?,
-                  val point_geo : ArrayList<Float>)
+                  val point_geo : ArrayList<Float>) : Serializable
 {
     fun getImages() : ArrayList<String>?
     {
         var imagesArrayListTemp = ArrayList<String>()
         var imagesArrayListResult = ArrayList<String>()
-
         if (images != null)
         {
             imagesArrayListTemp = (images.split("\"")).toCollection(ArrayList())
@@ -35,8 +36,10 @@ data class Place (val accessForWheelchair : Int?,
                 imagesArrayListResult.add(str)
             }
         }
-        return imagesArrayListResult
+            return imagesArrayListResult
+
     }
+}
 
     /*
     "[
@@ -50,4 +53,3 @@ data class Place (val accessForWheelchair : Int?,
         }
      ]"
      */
-}

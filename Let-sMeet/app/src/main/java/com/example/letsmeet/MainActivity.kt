@@ -13,21 +13,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
-import androidx.fragment.app.FragmentManager
-import androidx.fragment.app.FragmentTransaction
-import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
-import com.example.letsmeet.databinding.ActivityMainBinding
-import com.example.letsmeet.onlineAPI.PlacesStrasbourgAPIRepository
-import com.example.letsmeet.onlineAPI.PlacesStrasbourgAPIService
-import com.example.letsmeet.onlineAPI.PlacesStrasbourgAPIViewModel
-import com.example.letsmeet.onlineAPI.PlacesStrasbourgAPIViewModelFactory
 import com.google.android.material.navigation.NavigationView
-import okhttp3.internal.notifyAll
-import java.util.*
-import java.util.logging.Logger
-import kotlin.collections.ArrayList
 
 class MainActivity : AppCompatActivity()
 {
@@ -96,8 +83,6 @@ class MainActivity : AppCompatActivity()
         var fram = supportFragmentManager.beginTransaction()
         fram.replace(R.id.fragment_main, FluxFragment())
         fram.commit()
-
-
     }
 
     /*fun receivedNewPjoto(place : Place)

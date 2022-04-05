@@ -2,7 +2,9 @@ package com.example.thermotector
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.TextView
+import kotlin.reflect.typeOf
 
 class MainActivity : AppCompatActivity()
 {
@@ -13,5 +15,6 @@ class MainActivity : AppCompatActivity()
 
         var txtTemperature : TextView = findViewById(R.id.txt_temp_actuelle)
         txtTemperature.text = "23"
+
     }
 }
