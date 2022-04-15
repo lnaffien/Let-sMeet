@@ -42,6 +42,26 @@
 
     <!-- For the APIs -->
     <string name="api_key_strasbourg">https://data.strasbourg.eu/api/records/1.0/search/?dataset=lieux_culture</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">Welcome !</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+
+    <!-- For the Authentification -->
+    <string name="auth_city">à Strasbourg</string>
+    <string name="auth_sign_in">Connexion</string>
+    <string name="auth_new_account">Créer un nouveau compte</string>
+    <string name="auth_facebook_id" translatable="false"></string>
+    <string name="auth_facebook_protocol_scheme" translatable="false"></string>
+    <string name="auth_connection_choice">Se connecter avec :</string>
+    <string name="auth_mail">Adresse mail</string>
+    <string name="auth_google">Google</string>
+
 
 
 </resources>

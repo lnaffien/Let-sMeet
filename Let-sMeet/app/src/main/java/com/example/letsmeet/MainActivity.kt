@@ -35,30 +35,6 @@ class MainActivity : AppCompatActivity()
         //setContentView(binding.root)
         setContentView(R.layout.activity_main)
 
-        // TEMP
-
-
-
-//        val binding = ActivityMainBinding.inflate(layoutInflater)
-//        setContentView(binding.root)
-//
-//        val retrofitService = PlacesStrasbourgAPIService.getInstance()
-//        val adapter = PlaceAdapter()
-//        var viewModel = ViewModelProvider(this,
-//            PlacesStrasbourgAPIViewModelFactory(PlacesStrasbourgAPIRepository(retrofitService)))
-//            .get(PlacesStrasbourgAPIViewModel::class.java)
-//
-//        binding.recyclerViewMain.adapter = adapter
-//        viewModel.liveData.observe(this, androidx.lifecycle.Observer {
-//            Log.d("Main Activity", "onCreate : $it")
-//            adapter.setPlacesList(it)
-//        })
-//        viewModel.errorMessage.observe(this, androidx.lifecycle.Observer {
-//
-//        })
-//        viewModel.getAllPlaces()
-        // FIN TEMP
-
         fragmentLayout = findViewById(R.id.fragment_main)
 
         val toolbar: Toolbar = findViewById(R.id.toolbar)
@@ -85,16 +61,6 @@ class MainActivity : AppCompatActivity()
         fram.commit()
     }
 
-    /*fun receivedNewPjoto(place : Place)
-    {
-        runOnUiThread
-        {
-            placeList.add(newPlace)
-            adapter.notifyAll()
-        }
-
-    }*/
-
     /*override fun onStart() {
         super.onStart()
         if(placeList.size == 0)
@@ -116,7 +82,7 @@ class MainActivity : AppCompatActivity()
      ********************************/
 
     /**
-     * When the phone's back button is pressed
+     * Close the drawer when the phone's back button is pressed
      */
     override fun onBackPressed() {
         if(this.drawer.isDrawerOpen(GravityCompat.START))
@@ -129,6 +95,9 @@ class MainActivity : AppCompatActivity()
         }
     }
 
+    /**
+     * Event when the drawer is opened : Change main fragment according to what has been clicked
+     */
     private fun setNavDrawerEvent()
     {
         navView.setNavigationItemSelectedListener { menuItem ->
@@ -177,17 +146,19 @@ class MainActivity : AppCompatActivity()
     override fun onCreateOptionsMenu(menu: Menu?): Boolean
     {
         menuInflater.inflate(R.menu.toolbar_menu, menu)
-//        searchItem = menu?.findItem(R.id.toolbar_search)
-//        searchView=searchItem?.actionView
+     //   searchItem = menu?.findItem(R.id.toolbar_search)
+      //  searchView=searchItem?.actionView
         return true
     }
 
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+    override fun onOptionsItemSelected(item: MenuItem): Boolean
+    {
         when(item.itemId)
         {
             R.id.toolbar_search ->
             {
-                Toast.makeText(this, R.string.toolbar_search, Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, item.toString(), Toast.LENGTH_SHORT).show()
+                //Toast.makeText(this, R.string.toolbar_search, Toast.LENGTH_SHORT).show()
                 true
             }
         }

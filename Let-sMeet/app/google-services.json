@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "730522807188",
+    "firebase_url": "https://let-s-meet-d2dd8-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "let-s-meet-d2dd8",
+    "storage_bucket": "let-s-meet-d2dd8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:730522807188:android:d0d8c6bb0d5990706b3d81",
+        "android_client_info": {
+          "package_name": "com.example.letsmeet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "730522807188-bit6gptbn8t3lr0vr4o5c4qhnush2bvp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzSdiq9XyqYHcq3pB4QW3yGPfZlSkewrQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "730522807188-bit6gptbn8t3lr0vr4o5c4qhnush2bvp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
